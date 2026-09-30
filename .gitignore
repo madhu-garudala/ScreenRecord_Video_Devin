@@ -3,4 +3,5 @@
 .swiftpm/
 build/
 dist/
+.devin/config.local.json
 *.xcodeproj/xcuserdata/
