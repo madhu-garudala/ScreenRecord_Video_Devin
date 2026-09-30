@@ -1,5 +1,5 @@
 import AppKit
-import AVFoundation
+@preconcurrency import AVFoundation
 
 /// Floating, draggable circular camera bubble. It is a regular on-screen window,
 /// so the screen capture picks it up.
