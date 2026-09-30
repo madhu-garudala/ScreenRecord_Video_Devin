@@ -13,8 +13,8 @@ jobs:
       - name: Build app
         run: make app
       - name: Zip app
-        run: ditto -c -k --keepParent build/ScreenRecord.app build/ScreenRecord.zip
+        run: ditto -c -k --keepParent build/Recordly.app build/Recordly.zip
       - uses: actions/upload-artifact@v4
         with:
-          name: ScreenRecord
-          path: build/ScreenRecord.zip
+          name: Recordly
+          path: build/Recordly.zip

@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "ScreenRecord",
+    name: "Recordly",
     platforms: [.macOS(.v14)],
     targets: [
         .executableTarget(
-            name: "ScreenRecord",
-            path: "Sources/ScreenRecord"
+            name: "Recordly",
+            path: "Sources/Recordly"
         )
     ]
 )

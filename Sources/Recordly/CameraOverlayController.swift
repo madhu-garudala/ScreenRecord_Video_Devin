@@ -12,7 +12,7 @@ final class CameraOverlayController {
     private var session: AVCaptureSession?
     private var wantsVisible = false
     private var lastOrigin: CGPoint?
-    private let sessionQueue = DispatchQueue(label: "ScreenRecord.camera")
+    private let sessionQueue = DispatchQueue(label: "Recordly.camera")
 
     /// Returns false if the camera could not be shown (no permission or no device).
     @discardableResult

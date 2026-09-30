@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ScreenRecordApp: App {
+struct RecordlyApp: App {
     @StateObject private var recorder = RecorderController()
 
     var body: some Scene {
@@ -19,7 +19,10 @@ struct MenuBarLabel: View {
     var body: some View {
         switch recorder.phase {
         case .idle:
-            Image(systemName: "record.circle")
+            HStack(spacing: 4) {
+                Image(systemName: "record.circle")
+                Text("Recordly")
+            }
         case .countdown(let seconds):
             Text("\(Image(systemName: "timer")) \(seconds)")
         case .recording:
@@ -59,7 +62,7 @@ struct MenuContent: View {
 
         Divider()
 
-        Button("Quit ScreenRecord") { NSApplication.shared.terminate(nil) }
+        Button("Quit Recordly") { NSApplication.shared.terminate(nil) }
             .keyboardShortcut("q")
     }
 

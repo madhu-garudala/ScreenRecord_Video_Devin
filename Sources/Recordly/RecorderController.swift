@@ -13,7 +13,7 @@ final class RecorderController: ObservableObject {
 
     static let recordingsFolder = FileManager.default
         .urls(for: .moviesDirectory, in: .userDomainMask)[0]
-        .appendingPathComponent("ScreenRecord", isDirectory: true)
+        .appendingPathComponent("Recordly", isDirectory: true)
 
     private static let countdownSeconds = 3
 
@@ -71,7 +71,7 @@ final class RecorderController: ObservableObject {
         statusMessage = nil
         guard Permissions.ensureScreenRecordingAccess() else {
             needsScreenPermission = true
-            statusMessage = "Allow ScreenRecord in Privacy & Security › Screen Recording, then relaunch."
+            statusMessage = "Allow Recordly in Privacy & Security › Screen Recording, then relaunch."
             return
         }
         needsScreenPermission = false

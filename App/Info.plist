@@ -5,15 +5,17 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>ScreenRecord</string>
+	<string>Recordly</string>
 	<key>CFBundleExecutable</key>
-	<string>ScreenRecord</string>
+	<string>Recordly</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.madhugarudala.ScreenRecord</string>
+	<string>com.madhugarudala.Recordly</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ScreenRecord</string>
+	<string>Recordly</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -29,8 +31,8 @@
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>ScreenRecord shows your camera in a floating bubble that is included in your recordings.</string>
+	<string>Recordly shows your camera in a floating bubble that is included in your recordings.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>ScreenRecord records your voice along with your screen.</string>
+	<string>Recordly records your voice along with your screen.</string>
 </dict>
 </plist>

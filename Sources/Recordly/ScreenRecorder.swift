@@ -27,7 +27,7 @@ final class ScreenRecorder: NSObject, @unchecked Sendable {
     private let display: SCDisplay
     private let outputURL: URL
     private let captureMicrophone: Bool
-    private let queue = DispatchQueue(label: "ScreenRecord.writer")
+    private let queue = DispatchQueue(label: "Recordly.writer")
 
     private var stream: SCStream?
     private var micSession: AVCaptureSession?
